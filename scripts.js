@@ -1,19 +1,14 @@
 <script>
-   function previewFile(){
-       var preview = document.querySelector('img'); //selects the query named img
-       var file    = document.querySelector('input[type=file]').files[0]; //sames as here
-       var reader  = new FileReader();
+      function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
 
-       reader.onloadend = function () {
-           preview.src = reader.result;
-       }
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
 
-       if (file) {
-           reader.readAsDataURL(file); //reads the data as a URL
-       } else {
-           preview.src = "";
-       }
-  }
-
-  previewFile();  //calls the function named previewFile()
-  </script>
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+</script>
