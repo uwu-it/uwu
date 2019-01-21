@@ -10,3 +10,7 @@ p {
   font-family: 'Roboto';
   font-size: 30;
 }
+
+body {
+  background-image: url("Gradient-04.png");
+}
