@@ -11,6 +11,10 @@ p {
   font-size: 30;
 }
 
+input {
+  text-align: center;
+}
+
 body {
   background-image: url("Gradient-04.png");
 }
