@@ -22,8 +22,9 @@
   
   <p> upload any image and uwu it immediately:) </p>
   
-  <input type='file' onchange="readURL(this);" />
-  <img id="imagePreview" src="http://placehold.it/180" alt="imagePreview" />
+  <input type="file"  accept="image/gif, image/jpeg, image/png" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+  <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+  <img id="output" width="200" />
 </body>
   
 </html>
