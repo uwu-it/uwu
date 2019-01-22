@@ -20,6 +20,10 @@ input {
   color: white;
 }
 
+canvas {
+  text-align: center;
+}
+
 body {
   background-image: url("Gradient-04.png");
 }
