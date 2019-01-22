@@ -11,6 +11,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
   <script src="scripts.js"></script>
+  <script src="fabric.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Sarabun:800" rel="stylesheet">
@@ -32,6 +33,15 @@
 	var image = document.getElementById('output');
 	image.src = URL.createObjectURL(event.target.files[0]);
   };
+  </script>
+	
+  <canvas id="canvas" width="800" height="450" style="border:1px solid #000000"></canvas>
+  <script>
+      var canvas = new fabric.Canvas('canvas');
+      canvas.add(new fabric.Circle({ radius: 30, fill: '#f55', top: 100, left: 100 }));
+      canvas.selectionColor = 'rgba(0,255,0,0.3)';       
+      canvas.selectionBorderColor = 'red';
+      canvas.selectionLineWidth = 5;
   </script>
 </body>
   
