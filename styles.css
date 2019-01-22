@@ -2,20 +2,21 @@ h1 {
   text-align: center;
   font-weight: bold;
   font-family: 'Sarabun';
-  font-size: 75;
+  font-size: 150;
   color: white;
 }
 
 p {
   text-align: center;
   font-family: 'Roboto';
-  font-size: 40;
+  font-size: 60;
   color: white;
 }
 
 input {
   text-align: center;
-  font-size: 40;
+  font-size: 60;
+  border-style: solid;
   color: white;
 }
 
